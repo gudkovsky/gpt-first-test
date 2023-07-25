@@ -52,10 +52,9 @@ function App() {
         model: "gpt-3.5-turbo",
         messages: [{ role: "user", content: userMessage }],
       })
-      .then((res) => {
-        setGptAnswer(res.data.choices[0].message.content);
-        setLoading(false);
-      });
+      .then((res) => setGptAnswer(res.data.choices[0].message.content))
+      .catch((err) => console.log(err))
+      .finally(setLoading(true));
 
     setUserMessage("");
   };
