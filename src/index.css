@@ -7,4 +7,7 @@
 html {
   background: rgb(58,87,91);
   background: linear-gradient(145deg, rgba(58,87,91,1) 0%, rgba(38,36,37,1) 55%);
+  background-attachment:fixed;
+  background-size: 200%;
+  background-repeat: no-repeat;
 }
