@@ -1,0 +1,14 @@
+.output {
+  width: 100%;
+  min-height: 10vh;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.648);
+  padding: 1vh;
+  border: 1px solid rgba(255, 255, 255, 0.271);
+  border-radius: 5vh;
+}
+
+.output__answer {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.848);
+}
