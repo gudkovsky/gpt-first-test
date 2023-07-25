@@ -54,7 +54,7 @@ function App() {
       })
       .then((res) => setGptAnswer(res.data.choices[0].message.content))
       .catch((err) => console.log(err))
-      .finally(setLoading(true));
+      .finally(setLoading(false));
 
     setUserMessage("");
   };
